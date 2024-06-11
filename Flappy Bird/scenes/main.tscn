@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://d25tm7yuq6jnl"]
+[gd_scene load_steps=10 format=3 uid="uid://d25tm7yuq6jnl"]
 
 [ext_resource type="PackedScene" uid="uid://dl07wewux8jh" path="res://scenes/teleport.tscn" id="1_cio2n"]
 [ext_resource type="Texture2D" uid="uid://bn3h08mcrlajp" path="res://assets/sprites/tileset.png" id="1_jsoww"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_t20uw"]
 [ext_resource type="PackedScene" uid="uid://s7q2trpceyq0" path="res://scenes/grass.tscn" id="2_dym4l"]
+[ext_resource type="Script" path="res://scripts/teleport.gd" id="2_n2ols"]
 [ext_resource type="PackedScene" uid="uid://dargi42v2wsfg" path="res://scenes/flappy_bird.tscn" id="3_ttq8t"]
 [ext_resource type="PackedScene" uid="uid://cp3q6d2xivhne" path="res://scenes/boundary.tscn" id="4_bsxgo"]
 
@@ -109,9 +111,13 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_qlxc0")
 
 [node name="root" type="Node2D"]
+script = ExtResource("1_t20uw")
 
 [node name="teleport" parent="." instance=ExtResource("1_cio2n")]
 position = Vector2(-640, 352)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("2_n2ols")
 
 [node name="spawnpoint" type="Node2D" parent="."]
 position = Vector2(384, 0)
@@ -155,8 +161,8 @@ position = Vector2(128, 352)
 position = Vector2(48, 176)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(128, 192)
-zoom = Vector2(3, 3)
+position = Vector2(-192, 192)
+zoom = Vector2(0.5, 0.5)
 
 [node name="boundary" parent="." instance=ExtResource("4_bsxgo")]
 position = Vector2(128, 32)
@@ -164,3 +170,5 @@ position = Vector2(128, 32)
 [node name="boundary2" parent="." instance=ExtResource("4_bsxgo")]
 position = Vector2(128, 352)
 rotation = 3.14159
+
+[connection signal="body_entered" from="teleport" to="teleport" method="_on_body_entered"]

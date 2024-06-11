@@ -1,9 +1,10 @@
+AnimatableBody2D
+CharacterBody2D
+StaticBody2D
 CollisionShape2D
 Area2D
 Node2D
 Sprite2D
 Node
-StaticBody2D
 Camera2D
-CharacterBody2D
 TileMap

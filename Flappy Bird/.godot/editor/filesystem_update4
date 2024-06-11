@@ -1,6 +1,6 @@
-res://scenes/grass.tscn
 res://scenes/main.tscn
+res://scenes/grass.tscn
 res://scenes/flappy_bird.tscn
 res://scenes/boundary.tscn
-res://scripts/flappy_bird.gd
 res://scenes/teleport.tscn
+res://scripts/main.gd
