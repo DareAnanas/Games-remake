@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dargi42v2wsfg"]
+[gd_scene load_steps=4 format=3 uid="uid://dargi42v2wsfg"]
 
+[ext_resource type="Script" path="res://scripts/flappy_bird.gd" id="1_7x1sy"]
 [ext_resource type="Texture2D" uid="uid://cu2h0wyiq0v10" path="res://assets/sprites/flappy bird.png" id="1_jvn6s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_323k2"]
 size = Vector2(17, 12)
 
 [node name="Flappy Bird" type="CharacterBody2D"]
+script = ExtResource("1_7x1sy")
 
 [node name="FlappyBird" type="Sprite2D" parent="."]
 position = Vector2(16, 16)
