@@ -21,6 +21,12 @@ window/size/viewport_width=648
 window/size/viewport_height=1152
 window/handheld/orientation=1
 
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="boundary"
+2d_physics/layer_3="pipes"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=3

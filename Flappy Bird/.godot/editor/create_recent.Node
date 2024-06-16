@@ -1,9 +1,9 @@
+Node2D
+Area2D
+CollisionShape2D
 AnimatableBody2D
 CharacterBody2D
 StaticBody2D
-CollisionShape2D
-Area2D
-Node2D
 Sprite2D
 Node
 Camera2D

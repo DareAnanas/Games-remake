@@ -1,23 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://s7q2trpceyq0"]
+[gd_scene load_steps=2 format=3 uid="uid://s7q2trpceyq0"]
 
 [ext_resource type="Texture2D" uid="uid://ci7t3l2gs538v" path="res://assets/sprites/grass.png" id="1_bp7rg"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xs1wg"]
-size = Vector2(512, 32)
-
-[node name="Grass" type="AnimatableBody2D"]
+[node name="Grass" type="Sprite2D"]
 texture_repeat = 2
-position = Vector2(128, 16)
-collision_layer = 2
-collision_mask = 2
-
-[node name="Grass" type="Sprite2D" parent="."]
 position = Vector2(-128, 0)
 texture = ExtResource("1_bp7rg")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 512, 32)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(128, 16)
-shape = SubResource("RectangleShape2D_xs1wg")
