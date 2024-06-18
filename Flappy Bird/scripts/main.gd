@@ -13,7 +13,7 @@ var pipe_queue = [];
 const SPEED = 75;
 const DIRECTION = -1;
 
-func _ready():
+func spawn():
 	var pipe_combination = pipe_combination_scene.instantiate();
 	pipe_combination.position.x = spawnpoint.position.x;
 	pipe_combination.position.y = 128;
@@ -21,6 +21,9 @@ func _ready():
 	pipe_combination.add_child(pipe);
 	pipe_queue.append(pipe_combination);
 	add_child(pipe_queue.back());
+
+func _ready():
+	spawn();
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -37,15 +40,10 @@ func _process(delta):
 		pipe_queue.pop_front().queue_free();
 	
 	if (!pipe_queue.is_empty()):
-		pipe_queue.map(func(pipe_combination): pipe_combination.position.x += SPEED * DIRECTION * delta)
+		pipe_queue.map(func(pipe_combination): 
+			pipe_combination.position.x += SPEED * DIRECTION * delta
+		)
 
 func _on_timer_timeout():
-	#TODO треба зробити чергу
-	var pipe_combination = pipe_combination_scene.instantiate();
-	pipe_combination.position.x = spawnpoint.position.x;
-	pipe_combination.position.y = 128;
-	var pipe = pipe_scene.instantiate();
-	pipe_combination.add_child(pipe);
-	pipe_queue.append(pipe_combination);
-	add_child(pipe_queue.back());
+	spawn();
 	#pass
