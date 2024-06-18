@@ -38,6 +38,7 @@ rotation = 3.14159
 collision_layer = 2
 
 [node name="Timer" type="Timer" parent="."]
+one_shot = true
 autostart = true
 
 [node name="PipeCombination" type="Node2D" parent="."]
