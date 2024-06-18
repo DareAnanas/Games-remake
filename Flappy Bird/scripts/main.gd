@@ -32,3 +32,5 @@ func _process(delta):
 	
 	pipe_combination.position.x += SPEED * DIRECTION * delta;
 
+func _on_timer_timeout():
+	print("Idi")

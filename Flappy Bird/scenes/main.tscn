@@ -37,6 +37,9 @@ position = Vector2(128, 352)
 rotation = 3.14159
 collision_layer = 2
 
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [node name="PipeCombination" type="Node2D" parent="."]
 position = Vector2(384, 0)
 
@@ -65,3 +68,5 @@ position = Vector2(0, 320)
 
 [node name="Pipe9" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
 position = Vector2(0, 352)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
