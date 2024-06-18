@@ -1,6 +1,7 @@
-res://scenes/pipe.tscn
 res://scenes/main.tscn
-res://scripts/main.gd
 res://scenes/grass.tscn
 res://scenes/flappy_bird.tscn
 res://scenes/boundary.tscn
+res://scenes/pipe.tscn
+res://scenes/pipe_combination.tscn
+res://scripts/main.gd

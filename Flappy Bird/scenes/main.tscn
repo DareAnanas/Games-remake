@@ -38,30 +38,30 @@ rotation = 3.14159
 collision_layer = 2
 
 [node name="PipeCombination" type="Node2D" parent="."]
-
-[node name="Pipe" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
 position = Vector2(384, 0)
 
+[node name="Pipe" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
+
 [node name="Pipe2" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 32)
+position = Vector2(0, 32)
 
 [node name="Pipe3" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 64)
+position = Vector2(0, 64)
 
 [node name="Pipe4" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 192)
+position = Vector2(0, 192)
 
 [node name="Pipe5" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 224)
+position = Vector2(0, 224)
 
 [node name="Pipe6" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 256)
+position = Vector2(0, 256)
 
 [node name="Pipe7" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 288)
+position = Vector2(0, 288)
 
 [node name="Pipe8" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 320)
+position = Vector2(0, 320)
 
 [node name="Pipe9" parent="PipeCombination" instance=ExtResource("5_jtq7s")]
-position = Vector2(384, 352)
+position = Vector2(0, 352)
