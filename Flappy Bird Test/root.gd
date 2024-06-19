@@ -4,14 +4,21 @@ extends Node2D
 func pipeCombinationGenerator(pipeCount, gap):
 	var combinations = []
 	var sequence = []
+	var first_combination = [];
 	
 	# Initialize the sequence with 2's and a trailing 1
 	sequence.append(1)
 	for i in range(gap):
 		sequence.append(2)
+		first_combination.append(2)
 	sequence.append(1)
+	first_combination.append(1)
 	
 	# Generate first combination
+	for i in range(pipeCount - gap - 1):
+		first_combination.append(0)
+		
+	combinations.append(first_combination)
 
 	# Generate the combinations by shifting the sequence within the zeros
 	for i in range(pipeCount - len(sequence) + 1):
@@ -29,6 +36,10 @@ func pipeCombinationGenerator(pipeCount, gap):
 			combination.append(0)
 		
 		combinations.append(combination)
+		
+	var last_combination = first_combination.duplicate();
+	last_combination.reverse()
+	combinations.append(last_combination);
 
 	return combinations
 
