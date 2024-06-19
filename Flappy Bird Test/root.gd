@@ -11,8 +11,8 @@ func pipeCombinationGenerator(pipeCount, gap):
 	for i in range(gap):
 		sequence.append(2)
 		first_combination.append(2)
-	sequence.append(1)
-	first_combination.append(1)
+	sequence.append(3)
+	first_combination.append(3)
 	
 	# Generate first combination
 	for i in range(pipeCount - gap - 1):
@@ -39,6 +39,8 @@ func pipeCombinationGenerator(pipeCount, gap):
 		
 	var last_combination = first_combination.duplicate();
 	last_combination.reverse()
+	var three_index = last_combination.find(3);
+	last_combination[three_index] = 1;
 	combinations.append(last_combination);
 
 	return combinations

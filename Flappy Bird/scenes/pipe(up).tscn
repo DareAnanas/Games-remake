@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5h36"]
 size = Vector2(18, 29)
 
-[node name="Pipe(up)" type="AnimatableBody2D"]
+[node name="Pipe(up)" type="Area2D"]
 
 [node name="PipeEnd(down)" type="Sprite2D" parent="."]
 texture = ExtResource("1_dgtnc")
