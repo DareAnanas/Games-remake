@@ -1,0 +1,4 @@
+Sizing tasks in magitask:
+Effort
+Complexity
+Uncertainty
