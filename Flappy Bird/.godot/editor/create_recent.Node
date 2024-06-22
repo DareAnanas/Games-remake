@@ -1,3 +1,7 @@
+Label
+Button
+VBoxContainer
+MarginContainer
 Area2D
 Timer
 Node2D

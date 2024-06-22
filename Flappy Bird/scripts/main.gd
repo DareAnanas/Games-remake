@@ -4,6 +4,9 @@ extends Node2D
 @onready var moving_group_2 = $MovingGroup2
 @onready var teleport = $teleport
 @onready var spawnpoint = $spawnpoint
+@onready var pause_menu = $PauseMenu
+@onready var pipe_combination_anchor = $PipeCombinationAnchor
+@onready var game_over_menu = $GameOverMenu
 
 var pipe_combination_scene = preload("res://scenes/pipe_combination.tscn")
 var pipeScene = preload("res://scenes/pipe.tscn")
@@ -11,6 +14,9 @@ var pipeDownScene = preload("res://scenes/pipe(down).tscn")
 var pipeUpScene = preload("res://scenes/pipe(up).tscn")
 var pipe_queue = [];
 var pipeCombinations = [];
+
+var paused = false;
+var game_over = false;
 
 const SPEED = 75;
 const DIRECTION = -1;
@@ -79,14 +85,33 @@ func spawn(pipeCombination):
 	
 	
 	pipe_queue.append(pipe_combination);
-	add_child(pipe_queue.back());
+	pipe_combination_anchor.add_sibling(pipe_queue.back())
+	# add_child(pipe_queue.back());
 
 func _ready():
 	pipeCombinations = pipeCombinationsGenerator(12, 3);
 	spawn(pipeCombinations.pick_random());
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func pauseMenu():
+	if paused:
+		pause_menu.hide()
+		Engine.time_scale = 1
+	else:
+		pause_menu.show()
+		Engine.time_scale = 0
+	paused = !paused
+	
+func gameOverMenu():
+	if game_over:
+		game_over_menu.hide();
+	else:
+		game_over_menu.show();
+	game_over = !game_over;
+	
+
+func controlled_process(delta):
+	if Input.is_action_just_pressed('pause'):
+		pauseMenu()
 	
 	if (moving_group_1.position.x <= teleport.position.x):
 		moving_group_1.position.x = moving_group_2.position.x + 512
@@ -104,6 +129,18 @@ func _process(delta):
 			pipe_combination.position.x += SPEED * DIRECTION * delta
 		)
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if (!game_over):
+		controlled_process(delta)
+	
+
 func _on_timer_timeout():
-	spawn(pipeCombinations.pick_random());
+	if (!game_over):
+		spawn(pipeCombinations.pick_random());
 	#pass
+
+
+func _on_button_pressed():
+	if (!game_over):
+		pauseMenu()

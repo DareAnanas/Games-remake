@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bysl64vyqyh42"]
+[gd_scene load_steps=4 format=3 uid="uid://bysl64vyqyh42"]
 
+[ext_resource type="Script" path="res://scripts/pipe(up).gd" id="1_c8xoy"]
 [ext_resource type="Texture2D" uid="uid://cb3fr50frjcpc" path="res://assets/sprites/pipe end(up).png" id="1_dgtnc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5h36"]
 size = Vector2(18, 29)
 
 [node name="Pipe(up)" type="Area2D"]
+script = ExtResource("1_c8xoy")
 
 [node name="PipeEnd(down)" type="Sprite2D" parent="."]
 texture = ExtResource("1_dgtnc")
@@ -14,3 +16,5 @@ offset = Vector2(16, 16)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(16, 17.5)
 shape = SubResource("RectangleShape2D_u5h36")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

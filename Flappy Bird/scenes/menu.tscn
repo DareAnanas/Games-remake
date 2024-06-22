@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfxh6xselpgfe"]
+
+[ext_resource type="Texture2D" uid="uid://dxn2dyus003mj" path="res://assets/sprites/menu background.png" id="1_63hbl"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_m82di"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m82di")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 640.0
+offset_right = 364.0
+offset_bottom = 815.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Play"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Quit"
+
+[node name="MenuBackground" type="Sprite2D" parent="."]
+position = Vector2(320, 288)
+scale = Vector2(0.844444, 0.844444)
+texture = ExtResource("1_63hbl")
+offset = Vector2(5, 19)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
