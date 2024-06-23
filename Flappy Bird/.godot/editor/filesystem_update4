@@ -4,3 +4,7 @@ res://scenes/pause_menu.tscn
 res://scenes/pipe.tscn
 res://scenes/pipe(up).tscn
 res://scenes/pipe(down).tscn
+res://scenes/score_area_2d.tscn
+res://scenes/score_area.tscn
+res://scripts/main.gd
+res://scripts/score_area.gd

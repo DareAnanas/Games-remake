@@ -7,22 +7,27 @@ extends Node2D
 @onready var pause_menu = $PauseMenu
 @onready var pipe_combination_anchor = $PipeCombinationAnchor
 @onready var game_over_menu = $GameOverMenu
+@onready var score_lable = $ScoreLable
 
 var pipe_combination_scene = preload("res://scenes/pipe_combination.tscn")
 var pipeScene = preload("res://scenes/pipe.tscn")
 var pipeDownScene = preload("res://scenes/pipe(down).tscn")
 var pipeUpScene = preload("res://scenes/pipe(up).tscn")
+var scoreArea = preload("res://scenes/score_area.tscn")
 var pipe_queue = [];
 var pipeCombinations = [];
 
 var paused = false;
 var game_over = false;
 
+var score = 0;
+
 const SPEED = 75;
 const DIRECTION = -1;
 var pipeDictionary = {
 	0: pipeScene,
 	1: pipeDownScene,
+	2: scoreArea,
 	3: pipeUpScene
 }
 
@@ -110,6 +115,8 @@ func gameOverMenu():
 	
 
 func controlled_process(delta):
+	score_lable.text = str(score);
+	
 	if Input.is_action_just_pressed('pause'):
 		pauseMenu()
 	

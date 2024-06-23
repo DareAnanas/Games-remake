@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://6sht7k55whk"]
+
+[ext_resource type="Script" path="res://scripts/score_area.gd" id="1_d3w8d"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_38a0h"]
+b = Vector2(0, 32)
+
+[node name="ScoreArea" type="Area2D"]
+script = ExtResource("1_d3w8d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 0)
+shape = SubResource("SegmentShape2D_38a0h")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
