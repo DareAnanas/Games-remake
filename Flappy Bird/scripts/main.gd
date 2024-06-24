@@ -84,6 +84,8 @@ func spawn(pipeCombination):
 	for pipeNumber in pipeCombination:
 		if (pipeDictionary.has(pipeNumber)):
 			var pipe = pipeDictionary[pipeNumber].instantiate();
+			if (pipeNumber == 2):
+				pipe.pipe_combination = pipe_combination;
 			pipe.position.y = yPosition;
 			pipe_combination.add_child(pipe);
 		yPosition += 32;
