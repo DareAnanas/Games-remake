@@ -1,9 +1,1 @@
-res://scenes/pipe_combination.tscn
-res://scripts/pipe_combination.gd
 res://scenes/main.tscn
-res://scripts/score_area.gd
-res://scenes/score_area.tscn
-res://scenes/pipe.tscn
-res://scenes/flappy_bird.tscn
-res://scripts/flappy_bird.gd
-res://scripts/main.gd

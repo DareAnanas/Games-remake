@@ -1,0 +1,13 @@
+res://scenes/boundary.tscn::ffc692d06190fe498f1eb8673409caa7::1718809061::res://.godot/exported/133200997/export-270384622b0712fd1ec154c566ad1299-boundary.scn
+res://scenes/flappy_bird.tscn::12a958c8846da43fed8d7eaca56cd2a8::1719214604::res://.godot/exported/133200997/export-bba6448deb28397d0e8ddb4a87e0e20e-flappy_bird.scn
+res://scenes/game_over_menu.tscn::63d6297aa902641228c21a989c2a6d48::1719129182::res://.godot/exported/133200997/export-d8a58ab355b9a912456270e4718df9a2-game_over_menu.scn
+res://scenes/grass.tscn::06f27e0fa943f7a694c02f14264b9aec::1718809060::res://.godot/exported/133200997/export-be3b8d4ca72949d1cb70aa121409b318-grass.scn
+res://scenes/main.tscn::17115ef4aa35121004a6758ee36a1779::1719219058::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/menu.tscn::8741d2ac144a35a6c08d2c0cda005429::1718963389::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
+res://scenes/moving_group.tscn::39ea709d36c0f5cbe613cdc20fdc3b32::1718632322::res://.godot/exported/133200997/export-bbb9815e584965493d550867ef26ce65-moving_group.scn
+res://scenes/pause_menu.tscn::4159bae30e72028e6b7711e953e02525::1719129182::res://.godot/exported/133200997/export-ca2c2284eb591e72162d67219a0d2f87-pause_menu.scn
+res://scenes/pipe(down).tscn::7e314ad36e0aeba0450f744016d0d95e::1719129182::res://.godot/exported/133200997/export-7e5ebc6b8f6916df28365d827c59a01b-pipe(down).scn
+res://scenes/pipe(up).tscn::371ebddf34d1365c0031f7e061c41771::1719129182::res://.godot/exported/133200997/export-5ef77f604f48ec098741ee6f244f93f3-pipe(up).scn
+res://scenes/pipe.tscn::224d9b1937c9966a58807d14b7c98226::1719214288::res://.godot/exported/133200997/export-1362e1c2809766518435c132fe1832b0-pipe.scn
+res://scenes/pipe_combination.tscn::88957fc5738102ef77d6dce2b778f486::1719215108::res://.godot/exported/133200997/export-13fcea6958e98071c580fbbc6f140a3f-pipe_combination.scn
+res://scenes/score_area.tscn::18518091a5582aa133c3a0c863db1c78::1719215108::res://.godot/exported/133200997/export-249c87fbeff05c910df1fb31a3daf10a-score_area.scn
