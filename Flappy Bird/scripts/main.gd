@@ -8,6 +8,7 @@ extends Node2D
 @onready var pipe_combination_anchor = $PipeCombinationAnchor
 @onready var game_over_menu = $GameOverMenu
 @onready var score_lable = $ScoreLable
+@onready var touch_screen_button = $Camera2D/TouchScreenButton
 
 var pipe_combination_scene = preload("res://scenes/pipe_combination.tscn")
 var pipeScene = preload("res://scenes/pipe.tscn")
@@ -101,17 +102,21 @@ func _ready():
 	
 func pauseMenu():
 	if paused:
+		touch_screen_button.show()
 		pause_menu.hide()
 		Engine.time_scale = 1
 	else:
+		touch_screen_button.hide()
 		pause_menu.show()
 		Engine.time_scale = 0
 	paused = !paused
 	
 func gameOverMenu():
 	if game_over:
+		touch_screen_button.show()
 		game_over_menu.hide();
 	else:
+		touch_screen_button.hide()
 		game_over_menu.show();
 	game_over = !game_over;
 	

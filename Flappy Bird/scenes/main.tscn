@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://d25tm7yuq6jnl"]
+[gd_scene load_steps=9 format=3 uid="uid://d25tm7yuq6jnl"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_t20uw"]
 [ext_resource type="PackedScene" uid="uid://bp1ih5sk5lsk7" path="res://scenes/moving_group.tscn" id="2_od5iw"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://bvhtuvsg3b0xp" path="res://scenes/pause_menu.tscn" id="6_0byp5"]
 [ext_resource type="Texture2D" uid="uid://b20rdpvjvuqcg" path="res://assets/sprites/pause icon.png" id="6_spklc"]
 [ext_resource type="PackedScene" uid="uid://bdjl5llbfct5v" path="res://scenes/game_over_menu.tscn" id="7_erb2u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7co5"]
+size = Vector2(215, 324)
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_t20uw")
@@ -29,6 +32,11 @@ collision_mask = 2
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(128, 192)
 zoom = Vector2(3, 3)
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Camera2D"]
+position = Vector2(0, 29)
+shape = SubResource("RectangleShape2D_l7co5")
+action = "ui_accept"
 
 [node name="boundary" parent="." instance=ExtResource("4_bsxgo")]
 position = Vector2(128, 32)

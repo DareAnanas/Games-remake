@@ -1,6 +1,6 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1720611630
-export_presets.cfg::TextFile::-1::1720435645::0::1::::<><>::
+::res://::1720613961
+export_presets.cfg::TextFile::-1::1720611773::0::1::::<><>::
 flappy bird reference.jpg::CompressedTexture2D::3679822321955412082::1720165307::1720165307::1::::<><>::
 icon.svg::CompressedTexture2D::6267301711325392404::1720165307::1720165307::1::::<><>::
 ::res://assets/::1720165307
@@ -19,12 +19,12 @@ pipe end(up).png::CompressedTexture2D::4901168346168989888::1720165307::17201653
 pipe.png::CompressedTexture2D::4510567398342795353::1720165307::1720165307::1::::<><>::
 sky.png::CompressedTexture2D::3953085289961446689::1720165307::1720165307::1::::<><>::
 tileset.png::CompressedTexture2D::3357149643820412393::1720165307::1720165307::1::::<><>::
-::res://scenes/::1720512133
+::res://scenes/::1720613157
 boundary.tscn::PackedScene::5884503630901985826::1720165307::0::1::::<><>::
 flappy_bird.tscn::PackedScene::7194736627084141368::1720165307::0::1::::<><>::res://scripts/flappy_bird.gd<>uid://cu2h0wyiq0v10::::res://assets/sprites/flappy bird.png
 game_over_menu.tscn::PackedScene::2616288669933233053::1720165307::0::1::::<><>::res://scripts/game_over_menu.gd
 grass.tscn::PackedScene::1330479986823908729::1720165307::0::1::::<><>::uid://ci7t3l2gs538v::::res://assets/sprites/grass.png
-main.tscn::PackedScene::9117468933071222113::1720512133::0::1::::<><>::res://scripts/main.gd<>uid://bp1ih5sk5lsk7::::res://scenes/moving_group.tscn<>uid://dargi42v2wsfg::::res://scenes/flappy_bird.tscn<>uid://cp3q6d2xivhne::::res://scenes/boundary.tscn<>uid://bvhtuvsg3b0xp::::res://scenes/pause_menu.tscn<>uid://b20rdpvjvuqcg::::res://assets/sprites/pause icon.png<>uid://bdjl5llbfct5v::::res://scenes/game_over_menu.tscn
+main.tscn::PackedScene::9117468933071222113::1720613157::0::1::::<><>::res://scripts/main.gd<>uid://bp1ih5sk5lsk7::::res://scenes/moving_group.tscn<>uid://dargi42v2wsfg::::res://scenes/flappy_bird.tscn<>uid://cp3q6d2xivhne::::res://scenes/boundary.tscn<>uid://bvhtuvsg3b0xp::::res://scenes/pause_menu.tscn<>uid://b20rdpvjvuqcg::::res://assets/sprites/pause icon.png<>uid://bdjl5llbfct5v::::res://scenes/game_over_menu.tscn
 menu.tscn::PackedScene::5171747888520726766::1720165307::0::1::::<><>::uid://dxn2dyus003mj::::res://assets/sprites/menu background.png<>res://scripts/menu.gd
 moving_group.tscn::PackedScene::3493427000370488628::1720165307::0::1::::<><>::uid://bn3h08mcrlajp::::res://assets/sprites/tileset.png<>uid://s7q2trpceyq0::::res://scenes/grass.tscn
 pause_menu.tscn::PackedScene::3876027514217791753::1720165307::0::1::::<><>::res://scripts/pause_menu.gd
