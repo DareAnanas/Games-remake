@@ -1,2 +1,5 @@
 res://scenes/main.tscn
-res://scripts/main.gd
+res://scenes/menu.tscn
+res://scripts/menu.gd
+res://scenes/difficulty_change_menu.tscn
+res://scripts/difficulty_change_menu.gd

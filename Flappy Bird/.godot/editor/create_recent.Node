@@ -1,8 +1,8 @@
-TouchScreenButton
 Label
+Button
+TouchScreenButton
 CollisionShape2D
 Area2D
-Button
 VBoxContainer
 MarginContainer
 Timer
@@ -12,4 +12,3 @@ CharacterBody2D
 StaticBody2D
 Sprite2D
 Node
-Camera2D
