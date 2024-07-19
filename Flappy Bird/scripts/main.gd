@@ -33,6 +33,19 @@ var pipeDictionary = {
 	3: pipeUpScene
 }
 
+const difficultyDictionary = {
+	"insane": {
+		"gravity": 980,
+		"jumpVelocity": -400,
+		"superJump": false
+	},
+	"hard": {
+		"gravity": 800,
+		"jumpVelocity": -300,
+		"superJump": false
+	}
+}
+
 func pipeCombinationsGenerator(pipeCount, gap):
 	var combinations = []
 	var sequence = []
