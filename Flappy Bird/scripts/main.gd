@@ -9,6 +9,7 @@ extends Node2D
 @onready var game_over_menu = $GameOverMenu
 @onready var score_lable = $ScoreLable
 @onready var touch_screen_button = $Camera2D/TouchScreenButton
+@onready var flappy_bird = $"Flappy Bird"
 
 var pipe_combination_scene = preload("res://scenes/pipe_combination.tscn")
 var pipeScene = preload("res://scenes/pipe.tscn")
@@ -96,8 +97,14 @@ func spawn(pipeCombination):
 	pipe_combination_anchor.add_sibling(pipe_queue.back())
 	# add_child(pipe_queue.back());
 
+func setGravity(value):
+	flappy_bird.gravity = value;
+
+func setJumpVelocity(value):
+	flappy_bird.jumpVelocity = value
+
 func _ready():
-	
+	var difficulty = Global.readDifficulty();
 	
 	pipeCombinations = pipeCombinationsGenerator(12, 3);
 	spawn(pipeCombinations.pick_random());

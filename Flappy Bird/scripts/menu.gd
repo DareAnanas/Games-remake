@@ -3,15 +3,6 @@ extends Control
 @onready var difficulty_label = $MarginContainer/VBoxContainer/DifficultyLabel
 
 func _ready():
-	#var config = ConfigFile.new()
-	#
-	#var err = config.load("user://difficulty.cfg")
-	#
-	#if err != OK:
-		#return
-		#
-	#var difficulty = config.get_value("Game", "difficulty");
-	
 	var difficulty = Global.readDifficulty();
 	
 	difficulty_label.text = "Difficulty: " + difficulty
