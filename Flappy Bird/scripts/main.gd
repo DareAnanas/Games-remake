@@ -97,6 +97,8 @@ func spawn(pipeCombination):
 	# add_child(pipe_queue.back());
 
 func _ready():
+	
+	
 	pipeCombinations = pipeCombinationsGenerator(12, 3);
 	spawn(pipeCombinations.pick_random());
 	
