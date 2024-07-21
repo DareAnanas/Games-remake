@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d25tm7yuq6jnl"]
+[gd_scene load_steps=12 format=3 uid="uid://d25tm7yuq6jnl"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_t20uw"]
 [ext_resource type="PackedScene" uid="uid://bp1ih5sk5lsk7" path="res://scenes/moving_group.tscn" id="2_od5iw"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bvhtuvsg3b0xp" path="res://scenes/pause_menu.tscn" id="6_0byp5"]
 [ext_resource type="Texture2D" uid="uid://b20rdpvjvuqcg" path="res://assets/sprites/pause icon.png" id="6_spklc"]
 [ext_resource type="PackedScene" uid="uid://bdjl5llbfct5v" path="res://scenes/game_over_menu.tscn" id="7_erb2u"]
+[ext_resource type="Texture2D" uid="uid://ca3bkvkn6opd5" path="res://assets/sprites/up_arrow.png" id="8_raln8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7co5"]
 size = Vector2(215, 324)
@@ -98,7 +99,8 @@ offset_right = 53.0
 offset_bottom = 349.0
 focus_mode = 0
 shortcut = SubResource("Shortcut_ma6ch")
-text = "JU"
+icon = ExtResource("8_raln8")
+icon_alignment = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
