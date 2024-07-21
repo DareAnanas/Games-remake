@@ -36,6 +36,10 @@ position = Vector2(512, 0)
 position = Vector2(48, 176)
 collision_mask = 2
 
+[node name="Timer" type="Timer" parent="Flappy Bird"]
+process_callback = 0
+wait_time = 0.3
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(128, 192)
 zoom = Vector2(3, 3)
@@ -102,6 +106,7 @@ shortcut = SubResource("Shortcut_ma6ch")
 icon = ExtResource("8_raln8")
 icon_alignment = 1
 
+[connection signal="timeout" from="Flappy Bird/Timer" to="Flappy Bird" method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SuperJump" to="." method="_on_super_jump_pressed"]

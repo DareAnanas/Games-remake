@@ -1,11 +1,11 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1721542048
+::res://::1721567623
 export_presets.cfg::TextFile::-1::1720611773::0::1::::<><>::
 flappy bird reference.jpg::CompressedTexture2D::3679822321955412082::1720165307::1720165307::1::::<><>::
 global.gd::GDScript::-1::1721391154::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::6267301711325392404::1720165307::1720165307::1::::<><>::
 ::res://assets/::1720165307
-::res://assets/sprites/::1721542832
+::res://assets/sprites/::1721546689
 buildings.png::CompressedTexture2D::8479892649677013325::1720165307::1720165307::1::::<><>::
 bush.png::CompressedTexture2D::4562090157687212904::1720165307::1720165307::1::::<><>::
 cloud.png::CompressedTexture2D::4145005736878417544::1720165307::1720165307::1::::<><>::
@@ -21,14 +21,14 @@ pipe.png::CompressedTexture2D::4510567398342795353::1720165307::1720165307::1:::
 sky.png::CompressedTexture2D::3953085289961446689::1720165307::1720165307::1::::<><>::
 tileset.png::CompressedTexture2D::3357149643820412393::1720165307::1720165307::1::::<><>::
 up_arrow.png::CompressedTexture2D::4830723638502743104::1721546688::1721546689::1::::<><>::
-::res://scenes/::1721545761
+::res://scenes/::1721567378
 boundary.tscn::PackedScene::5884503630901985826::1720165307::0::1::::<><>::
-difficulty_change_menu.tscn::PackedScene::5166794191682435736::1721545761::0::1::::<><>::res://scripts/difficulty_change_menu.gd
+difficulty_change_menu.tscn::PackedScene::5166794191682435736::1721567378::0::1::::<><>::res://scripts/difficulty_change_menu.gd
 flappy_bird.tscn::PackedScene::7194736627084141368::1720165307::0::1::::<><>::res://scripts/flappy_bird.gd<>uid://cu2h0wyiq0v10::::res://assets/sprites/flappy bird.png
 game_over_menu.tscn::PackedScene::2616288669933233053::1720165307::0::1::::<><>::res://scripts/game_over_menu.gd
 grass.tscn::PackedScene::1330479986823908729::1720165307::0::1::::<><>::uid://ci7t3l2gs538v::::res://assets/sprites/grass.png
-main.tscn::PackedScene::9117468933071222113::1721545761::0::1::::<><>::res://scripts/main.gd<>uid://bp1ih5sk5lsk7::::res://scenes/moving_group.tscn<>uid://dargi42v2wsfg::::res://scenes/flappy_bird.tscn<>uid://cp3q6d2xivhne::::res://scenes/boundary.tscn<>uid://bvhtuvsg3b0xp::::res://scenes/pause_menu.tscn<>uid://b20rdpvjvuqcg::::res://assets/sprites/pause icon.png<>uid://bdjl5llbfct5v::::res://scenes/game_over_menu.tscn
-menu.tscn::PackedScene::5171747888520726766::1721545761::0::1::::<><>::uid://dxn2dyus003mj::::res://assets/sprites/menu background.png<>res://scripts/menu.gd
+main.tscn::PackedScene::9117468933071222113::1721567378::0::1::::<><>::res://scripts/main.gd<>uid://bp1ih5sk5lsk7::::res://scenes/moving_group.tscn<>uid://dargi42v2wsfg::::res://scenes/flappy_bird.tscn<>uid://cp3q6d2xivhne::::res://scenes/boundary.tscn<>uid://bvhtuvsg3b0xp::::res://scenes/pause_menu.tscn<>uid://b20rdpvjvuqcg::::res://assets/sprites/pause icon.png<>uid://bdjl5llbfct5v::::res://scenes/game_over_menu.tscn<>uid://ca3bkvkn6opd5::::res://assets/sprites/up_arrow.png
+menu.tscn::PackedScene::5171747888520726766::1721567378::0::1::::<><>::uid://dxn2dyus003mj::::res://assets/sprites/menu background.png<>res://scripts/menu.gd
 moving_group.tscn::PackedScene::3493427000370488628::1720165307::0::1::::<><>::uid://bn3h08mcrlajp::::res://assets/sprites/tileset.png<>uid://s7q2trpceyq0::::res://scenes/grass.tscn
 pause_menu.tscn::PackedScene::3876027514217791753::1720165307::0::1::::<><>::res://scripts/pause_menu.gd
 pipe(down).tscn::PackedScene::7098436518299322703::1720165307::0::1::::<><>::res://scripts/pipe(down).gd<>uid://bsfhsaoae6wi8::::res://assets/sprites/pipe end(down).png
@@ -36,12 +36,12 @@ pipe(up).tscn::PackedScene::4108836533841267985::1720165307::0::1::::<><>::res:/
 pipe.tscn::PackedScene::2383641425237360045::1720165307::0::1::::<><>::uid://b5i7nejiucvwj::::res://assets/sprites/pipe.png<>res://scripts/pipe.gd
 pipe_combination.tscn::PackedScene::6372040735549848108::1720165307::0::1::::<><>::res://scripts/pipe_combination.gd
 score_area.tscn::PackedScene::65102164676026848::1720165307::0::1::::<><>::res://scripts/score_area.gd
-::res://scripts/::1721545671
+::res://scripts/::1721565661
 difficulty_change_menu.gd::GDScript::-1::1721388655::0::1::::<>Control<>::
-flappy_bird.gd::GDScript::-1::1721545671::0::1::::<>CharacterBody2D<>::
+flappy_bird.gd::GDScript::-1::1721565571::0::1::::<>CharacterBody2D<>::
 game_over_menu.gd::GDScript::-1::1720165307::0::1::::<>Control<>::
 grass.gd::GDScript::-1::1720165307::0::1::::<>StaticBody2D<>::
-main.gd::GDScript::-1::1721545204::0::1::::<>Node2D<>::
+main.gd::GDScript::-1::1721565661::0::1::::<>Node2D<>::
 menu.gd::GDScript::-1::1721391366::0::1::::<>Control<>::
 pause_menu.gd::GDScript::-1::1720165307::0::1::::<>Control<>::
 pipe(down).gd::GDScript::-1::1720165307::0::1::::<>Area2D<>::

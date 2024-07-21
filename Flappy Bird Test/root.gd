@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var timer = $Timer
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,4 +13,9 @@ func _process(delta):
 	
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_accept"):
-		print('action just pressed')
+		timer.start();
+
+
+func _on_timer_timeout():
+	print('okay');
+	timer.stop();

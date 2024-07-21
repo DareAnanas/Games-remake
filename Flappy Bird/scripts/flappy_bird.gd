@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var root = $".."
+@onready var timer = $Timer
 
 const SPEED = 300.0
 #default jump velocity is -400
@@ -13,6 +14,9 @@ var boostVelocity = -450;
 
 var gravity = 800;
 
+var holdEnabled = false;
+var canHoldJump = false;
+
 func boost():
 	velocity.y = boostVelocity;
 
@@ -22,7 +26,16 @@ func controlled_physics_process(delta):
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept"):
-		velocity.y = jumpVelocity
+		velocity.y = jumpVelocity;
+		if holdEnabled:
+			timer.start();
+	
+	if holdEnabled:
+		if canHoldJump && Input.is_action_pressed("ui_accept"):
+			velocity.y = jumpVelocity;
+			
+		if (Input.is_action_just_released("ui_accept")):
+			canHoldJump = false;
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	#var direction = Input.get_axis("ui_left", "ui_right")
@@ -36,3 +49,8 @@ func controlled_physics_process(delta):
 func _physics_process(delta):
 	if (!root.game_over):
 		controlled_physics_process(delta)
+
+func _on_timer_timeout():
+	canHoldJump = true;
+	timer.stop();
+		

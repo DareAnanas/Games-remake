@@ -1,5 +1,4 @@
 res://scenes/main.tscn
-res://scripts/main.gd
+res://scripts/flappy_bird.gd
 res://scenes/menu.tscn
 res://scenes/difficulty_change_menu.tscn
-res://scripts/flappy_bird.gd

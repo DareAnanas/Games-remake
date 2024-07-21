@@ -39,22 +39,26 @@ const difficultyDictionary = {
 	"insane": {
 		"gravity": 980,
 		"jumpVelocity": -400,
-		"superJump": false
+		"superJump": false,
+		"holdEnabled": false
 	},
 	"hard": {
 		"gravity": 800,
 		"jumpVelocity": -300,
-		"superJump": false
+		"superJump": false,
+		"holdEnabled": false
 	},
 	"normal": {
 		"gravity": 600,
 		"jumpVelocity": -200,
-		"superJump": true
+		"superJump": true,
+		"holdEnabled": true
 	},
 	"easy": {
 		"gravity": 500,
 		"jumpVelocity": -100,
-		"superJump": true
+		"superJump": true,
+		"holdEnabled": true
 	}
 }
 
@@ -137,6 +141,8 @@ func _ready():
 	setJumpVelocity(difficultyValues["jumpVelocity"]);
 	
 	super_jump_button.visible = difficultyValues["superJump"];
+	
+	flappy_bird.holdEnabled = difficultyValues["holdEnabled"];
 	
 	pipeCombinations = pipeCombinationsGenerator(12, 3);
 	spawn(pipeCombinations.pick_random());
