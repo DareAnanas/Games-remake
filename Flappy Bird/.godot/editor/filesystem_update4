@@ -1,8 +1,5 @@
 res://scenes/main.tscn
-res://scenes/menu.tscn
-res://scripts/menu.gd
-res://scenes/difficulty_change_menu.tscn
-res://scripts/difficulty_change_menu.gd
-res://scripts/flappy_bird.gd
-res://global.gd
 res://scripts/main.gd
+res://scenes/menu.tscn
+res://scenes/difficulty_change_menu.tscn
+res://scripts/flappy_bird.gd

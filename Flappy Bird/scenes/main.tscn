@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://d25tm7yuq6jnl"]
+[gd_scene load_steps=11 format=3 uid="uid://d25tm7yuq6jnl"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_t20uw"]
 [ext_resource type="PackedScene" uid="uid://bp1ih5sk5lsk7" path="res://scenes/moving_group.tscn" id="2_od5iw"]
@@ -10,6 +10,12 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7co5"]
 size = Vector2(215, 324)
+
+[sub_resource type="InputEventAction" id="InputEventAction_6yjk5"]
+action = &"ui_up"
+
+[sub_resource type="Shortcut" id="Shortcut_ma6ch"]
+events = [SubResource("InputEventAction_6yjk5")]
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_t20uw")
@@ -85,5 +91,15 @@ offset_top = 128.0
 offset_right = 96.0
 offset_bottom = 128.0
 
+[node name="SuperJump" type="Button" parent="."]
+offset_left = 23.0
+offset_top = 318.0
+offset_right = 53.0
+offset_bottom = 349.0
+focus_mode = 0
+shortcut = SubResource("Shortcut_ma6ch")
+text = "JU"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SuperJump" to="." method="_on_super_jump_pressed"]

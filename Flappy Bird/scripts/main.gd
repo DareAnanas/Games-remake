@@ -10,6 +10,8 @@ extends Node2D
 @onready var score_lable = $ScoreLable
 @onready var touch_screen_button = $Camera2D/TouchScreenButton
 @onready var flappy_bird = $"Flappy Bird"
+@onready var super_jump_button = $SuperJump
+
 
 var pipe_combination_scene = preload("res://scenes/pipe_combination.tscn")
 var pipeScene = preload("res://scenes/pipe.tscn")
@@ -43,6 +45,16 @@ const difficultyDictionary = {
 		"gravity": 800,
 		"jumpVelocity": -300,
 		"superJump": false
+	},
+	"normal": {
+		"gravity": 600,
+		"jumpVelocity": -200,
+		"superJump": true
+	},
+	"easy": {
+		"gravity": 500,
+		"jumpVelocity": -100,
+		"superJump": true
 	}
 }
 
@@ -119,6 +131,13 @@ func setJumpVelocity(value):
 func _ready():
 	var difficulty = Global.readDifficulty();
 	
+	var difficultyValues = difficultyDictionary[difficulty];
+	
+	setGravity(difficultyValues["gravity"]);
+	setJumpVelocity(difficultyValues["jumpVelocity"]);
+	
+	super_jump_button.visible = difficultyValues["superJump"];
+	
 	pipeCombinations = pipeCombinationsGenerator(12, 3);
 	spawn(pipeCombinations.pick_random());
 	
@@ -180,3 +199,7 @@ func _on_timer_timeout():
 func _on_button_pressed():
 	if (!game_over):
 		pauseMenu()
+
+
+func _on_super_jump_pressed():
+	flappy_bird.boost();
