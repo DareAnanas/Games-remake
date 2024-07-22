@@ -7,7 +7,7 @@ const SPEED = 300.0
 #default jump velocity is -400
 var jumpVelocity = -300.0
 
-var boostVelocity = -450;
+var boostVelocity = -400;
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 #var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 # default gravity from project settings is 980
