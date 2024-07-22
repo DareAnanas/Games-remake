@@ -28,16 +28,15 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Play"
 
-[node name="DifficultyLabel" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "Difficulty:"
-horizontal_alignment = 1
-
-[node name="Change Difficulty" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Customization" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "Change difficulty"
+text = "Customization"
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Settings"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -51,5 +50,5 @@ texture = ExtResource("1_63hbl")
 offset = Vector2(5, 19)
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Change Difficulty" to="." method="_on_change_difficulty_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Customization" to="." method="_on_customization_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

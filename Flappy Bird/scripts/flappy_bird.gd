@@ -17,6 +17,9 @@ var gravity = 800;
 var holdEnabled = false;
 var canHoldJump = false;
 
+func findSpriteTypeNodeAmongChildrenOfNode():
+	pass
+
 func boost():
 	velocity.y = boostVelocity;
 

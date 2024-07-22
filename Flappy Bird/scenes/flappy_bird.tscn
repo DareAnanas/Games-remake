@@ -9,10 +9,10 @@ size = Vector2(17, 12)
 [node name="Flappy Bird" type="CharacterBody2D"]
 script = ExtResource("1_7x1sy")
 
-[node name="FlappyBird" type="Sprite2D" parent="."]
-position = Vector2(16, 16)
-texture = ExtResource("1_jvn6s")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(15.5, 14)
 shape = SubResource("RectangleShape2D_323k2")
+
+[node name="FlappyBird" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("1_jvn6s")
