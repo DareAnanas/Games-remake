@@ -144,6 +144,10 @@ func _ready():
 	
 	flappy_bird.holdEnabled = difficultyValues["holdEnabled"];
 	
+	var skin = Global.readSkin();
+	
+	flappy_bird.changeSkinToScene(skin);
+	
 	pipeCombinations = pipeCombinationsGenerator(12, 3);
 	spawn(pipeCombinations.pick_random());
 	

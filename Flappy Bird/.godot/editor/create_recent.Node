@@ -1,8 +1,9 @@
+Sprite2D
+OptionButton
 Button
 Label
 VBoxContainer
 MarginContainer
-Sprite2D
 Timer
 TouchScreenButton
 CollisionShape2D
@@ -11,4 +12,3 @@ Node2D
 AnimatableBody2D
 CharacterBody2D
 StaticBody2D
-Node

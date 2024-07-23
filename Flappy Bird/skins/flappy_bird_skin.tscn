@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjr33w2kyrabw"]
+
+[ext_resource type="Texture2D" uid="uid://cu2h0wyiq0v10" path="res://assets/sprites/flappy bird.png" id="1_q5wjv"]
+
+[node name="FlappyBird" type="Sprite2D"]
+position = Vector2(16, 16)
+texture = ExtResource("1_q5wjv")

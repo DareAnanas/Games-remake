@@ -17,8 +17,18 @@ var gravity = 800;
 var holdEnabled = false;
 var canHoldJump = false;
 
-func findSpriteTypeNodeAmongChildrenOfNode():
-	pass
+func changeSkinToScene(scene_name):
+	var path_placeholder = "res://skins/%s.tscn";
+	
+	var scene_path = path_placeholder % scene_name;
+	
+	
+	for child in get_children():
+		if child.get_class() == "Sprite2D":
+			remove_child(child);
+	var skin_scene = load(scene_path);
+	var skin = skin_scene.instantiate();
+	add_child(skin);
 
 func boost():
 	velocity.y = boostVelocity;
