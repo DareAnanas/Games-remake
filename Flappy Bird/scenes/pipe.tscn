@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://87whxjpyhjbp"]
+[gd_scene load_steps=5 format=3 uid="uid://87whxjpyhjbp"]
 
-[ext_resource type="Texture2D" uid="uid://b5i7nejiucvwj" path="res://assets/sprites/pipe.png" id="1_h77de"]
 [ext_resource type="Script" path="res://scripts/pipe.gd" id="1_m8v1m"]
+[ext_resource type="PackedScene" uid="uid://ypc84ykt1gg" path="res://skins/pipe_skin.tscn" id="2_bqam4"]
+[ext_resource type="PackedScene" uid="uid://m5sjwrdpi6sn" path="res://skins/hakurei_shrine(basement)_skin.tscn" id="3_rrggr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ooxv"]
 size = Vector2(18, 32)
@@ -10,12 +11,12 @@ size = Vector2(18, 32)
 collision_layer = 4
 script = ExtResource("1_m8v1m")
 
-[node name="Pipe" type="Sprite2D" parent="."]
-texture = ExtResource("1_h77de")
-offset = Vector2(16, 16)
+[node name="Pipe" parent="." instance=ExtResource("2_bqam4")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_4ooxv")
+
+[node name="HakureiShrine(basement)" parent="." instance=ExtResource("3_rrggr")]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

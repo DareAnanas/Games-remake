@@ -22,7 +22,6 @@ func changeSkinToScene(scene_name):
 	
 	var scene_path = path_placeholder % scene_name;
 	
-	
 	for child in get_children():
 		if child.get_class() == "Sprite2D":
 			remove_child(child);

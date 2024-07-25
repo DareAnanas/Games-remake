@@ -1,6 +1,9 @@
+Button
+GridContainer
+ItemList
+MenuButton
 Sprite2D
 OptionButton
-Button
 Label
 VBoxContainer
 MarginContainer
@@ -9,6 +12,3 @@ TouchScreenButton
 CollisionShape2D
 Area2D
 Node2D
-AnimatableBody2D
-CharacterBody2D
-StaticBody2D

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://m5sjwrdpi6sn"]
+
+[ext_resource type="Texture2D" uid="uid://qj50wgvwo3p6" path="res://assets/sprites/hakurei shrine (basement).jpeg" id="1_b0rt2"]
+
+[node name="HakureiShrine(basement)" type="Sprite2D"]
+position = Vector2(15.8573, 15.875)
+scale = Vector2(0.0507929, 0.253937)
+texture = ExtResource("1_b0rt2")

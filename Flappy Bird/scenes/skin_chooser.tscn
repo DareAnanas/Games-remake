@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1l0sg1fdrxkw"]
+
+[ext_resource type="Texture2D" uid="uid://4p3hs3ek64hy" path="res://assets/sprites/reimuFumoIcon.png" id="1_ldcxy"]
+[ext_resource type="Texture2D" uid="uid://8d44slew3mok" path="res://assets/sprites/flappyBirdIcon.png" id="2_g3b04"]
+
+[node name="SkinChooser" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 136.0
+offset_right = 562.0
+offset_bottom = 819.0
+columns = 3
+
+[node name="Button2" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("2_g3b04")
+
+[node name="Button" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_ldcxy")
