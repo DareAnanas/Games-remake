@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c08rgvsj3pk7s"]
+
+[ext_resource type="Script" path="res://scripts/SetTurnButton.gd" id="1_7kaud"]
+
+[node name="SetTurnButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_7kaud")
+
+[connection signal="pressed" from="." to="." method="onPressed"]

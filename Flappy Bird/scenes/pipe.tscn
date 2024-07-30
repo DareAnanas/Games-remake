@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://87whxjpyhjbp"]
 
 [ext_resource type="Script" path="res://scripts/pipe.gd" id="1_m8v1m"]
-[ext_resource type="PackedScene" uid="uid://ypc84ykt1gg" path="res://skins/pipe_skin.tscn" id="2_bqam4"]
-[ext_resource type="PackedScene" uid="uid://m5sjwrdpi6sn" path="res://skins/hakurei_shrine(basement)_skin.tscn" id="3_rrggr"]
+[ext_resource type="PackedScene" uid="uid://ypc84ykt1gg" path="res://skins/pipeSkin.tscn" id="2_bqam4"]
+[ext_resource type="PackedScene" uid="uid://m5sjwrdpi6sn" path="res://skins/hakureiShrineBasementSkin.tscn" id="3_rrggr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ooxv"]
 size = Vector2(18, 32)

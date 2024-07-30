@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://doa8n3bixpbaj"]
+
+[ext_resource type="PackedScene" uid="uid://c08rgvsj3pk7s" path="res://scenes/SetTurnButton.tscn" id="1_daun4"]
+
+[node name="TurnChooser" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 343.0
+offset_top = 167.0
+offset_right = 755.0
+offset_bottom = 217.0
+theme_override_font_sizes/font_size = 36
+text = "Choose who will be first"
+
+[node name="SetXTurnButton" parent="." instance=ExtResource("1_daun4")]
+offset_left = 384.0
+offset_top = 320.0
+offset_right = 512.0
+offset_bottom = 395.0
+theme_override_font_sizes/font_size = 48
+text = "X"
+turnState = 2
+
+[node name="SetOTurnButton2" parent="." instance=ExtResource("1_daun4")]
+offset_left = 576.0
+offset_top = 320.0
+offset_right = 704.0
+offset_bottom = 395.0
+theme_override_font_sizes/font_size = 48
+text = "O"
+turnState = 3

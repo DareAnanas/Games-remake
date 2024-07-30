@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl1w27we1u7w4"]
+
+[ext_resource type="Script" path="res://scripts/Play.gd" id="1_xivul"]
+
+[node name="MenuScene" type="Node2D"]
+
+[node name="Play" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 256.0
+offset_right = 640.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 36
+text = "Play"
+script = ExtResource("1_xivul")
+
+[connection signal="pressed" from="Play" to="Play" method="onpressed"]

@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtvdrsqg3darv"]
+
+[ext_resource type="Texture2D" uid="uid://cjaqlglkiu6m1" path="res://ReimuFumo.png" id="1_sbor7"]
+[ext_resource type="Texture2D" uid="uid://yu4j3o4q8mpt" path="res://CirnoFumo.png" id="2_vtu0v"]
+[ext_resource type="Texture2D" uid="uid://cj0omran7mr47" path="res://SakuyaFumo.png" id="3_1inxo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvq78"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ejvyq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_sbor7")
+}],
+"loop": true,
+"name": &"skin1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vtu0v")
+}],
+"loop": true,
+"name": &"skin2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1inxo")
+}],
+"loop": true,
+"name": &"skin3",
+"speed": 5.0
+}]
+
+[node name="Person1" type="CharacterBody2D"]
+metadata/SkinsNode = NodePath("AnimatedSprite2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_uvq78")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -5.96046e-08)
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_ejvyq")
+animation = &"skin1"

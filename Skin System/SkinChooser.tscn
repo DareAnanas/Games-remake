@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://by8s6jsmnme20"]
+
+[ext_resource type="Script" path="res://SkinChooser.gd" id="1_gan6e"]
+
+[node name="SkinChooser" type="OptionButton"]
+offset_right = 256.0
+offset_bottom = 48.0
+script = ExtResource("1_gan6e")
+metadata/ApplyToNode = NodePath("")
+
+[connection signal="item_selected" from="." to="." method="onItemSelected"]

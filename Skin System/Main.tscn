@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c01manxu5ptb8"]
+
+[ext_resource type="PackedScene" uid="uid://dtvdrsqg3darv" path="res://Person1.tscn" id="1_f0yyb"]
+[ext_resource type="PackedScene" uid="uid://by8s6jsmnme20" path="res://SkinChooser.tscn" id="2_hcogy"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Person1" parent="." instance=ExtResource("1_f0yyb")]
+position = Vector2(448, 256)
+
+[node name="SkinChooser" parent="." instance=ExtResource("2_hcogy")]
+offset_left = 320.0
+offset_top = 394.0
+offset_right = 576.0
+offset_bottom = 442.0
+metadata/ApplyToNode = NodePath("../Person1")

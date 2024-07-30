@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://ypc84ykt1gg"]
-
-[ext_resource type="Texture2D" uid="uid://b5i7nejiucvwj" path="res://assets/sprites/pipe.png" id="1_e54c6"]
-
-[node name="Pipe" type="Sprite2D"]
-texture = ExtResource("1_e54c6")
-offset = Vector2(16, 16)

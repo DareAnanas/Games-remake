@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3er2qsphc36e"]
+
+[ext_resource type="Script" path="res://scripts/ActionButton.gd" id="1_erycl"]
+
+[node name="ActionButton" type="Button"]
+offset_right = 88.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 48
+script = ExtResource("1_erycl")
+
+[connection signal="pressed" from="." to="." method="onPressed"]

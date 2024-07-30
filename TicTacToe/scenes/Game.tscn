@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8x1rfhgrkkn8"]
+
+[ext_resource type="PackedScene" uid="uid://c3er2qsphc36e" path="res://scenes/ActionButton.tscn" id="1_a3h43"]
+[ext_resource type="PackedScene" uid="uid://bkeu71pfj7yul" path="res://scenes/PlayerTurnLabel.tscn" id="2_obwm8"]
+
+[node name="Game" type="Node2D"]
+
+[node name="ActionButton" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 192.0
+offset_top = 128.0
+offset_right = 280.0
+offset_bottom = 216.0
+
+[node name="ActionButton2" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 320.0
+offset_top = 128.0
+offset_right = 408.0
+offset_bottom = 216.0
+id = 1
+
+[node name="ActionButton3" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 448.0
+offset_top = 128.0
+offset_right = 536.0
+offset_bottom = 216.0
+id = 2
+
+[node name="ActionButton4" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 192.0
+offset_top = 256.0
+offset_right = 280.0
+offset_bottom = 344.0
+id = 3
+
+[node name="ActionButton5" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 320.0
+offset_top = 256.0
+offset_right = 408.0
+offset_bottom = 344.0
+id = 4
+
+[node name="ActionButton6" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 448.0
+offset_top = 256.0
+offset_right = 536.0
+offset_bottom = 344.0
+id = 5
+
+[node name="ActionButton7" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 192.0
+offset_top = 384.0
+offset_right = 280.0
+offset_bottom = 472.0
+id = 6
+
+[node name="ActionButton8" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 320.0
+offset_top = 384.0
+offset_right = 408.0
+offset_bottom = 472.0
+id = 7
+
+[node name="ActionButton9" parent="." instance=ExtResource("1_a3h43")]
+offset_left = 448.0
+offset_top = 384.0
+offset_right = 536.0
+offset_bottom = 472.0
+id = 8
+
+[node name="PlayerTurnLabel" parent="." instance=ExtResource("2_obwm8")]
+offset_left = 256.0
+offset_top = 56.0
+offset_right = 468.0
+offset_bottom = 106.0

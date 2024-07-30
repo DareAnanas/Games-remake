@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_t20uw"]
 [ext_resource type="PackedScene" uid="uid://bp1ih5sk5lsk7" path="res://scenes/moving_group.tscn" id="2_od5iw"]
-[ext_resource type="PackedScene" uid="uid://dargi42v2wsfg" path="res://scenes/flappy_bird.tscn" id="3_ttq8t"]
+[ext_resource type="PackedScene" uid="uid://dargi42v2wsfg" path="res://scenes/flappyBird.tscn" id="3_ttq8t"]
 [ext_resource type="PackedScene" uid="uid://cp3q6d2xivhne" path="res://scenes/boundary.tscn" id="4_bsxgo"]
 [ext_resource type="PackedScene" uid="uid://bvhtuvsg3b0xp" path="res://scenes/pause_menu.tscn" id="6_0byp5"]
 [ext_resource type="Texture2D" uid="uid://b20rdpvjvuqcg" path="res://assets/sprites/pause icon.png" id="6_spklc"]
