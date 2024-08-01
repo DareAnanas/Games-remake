@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8x1rfhgrkkn8"]
+[gd_scene load_steps=4 format=3 uid="uid://c8x1rfhgrkkn8"]
 
 [ext_resource type="PackedScene" uid="uid://c3er2qsphc36e" path="res://scenes/ActionButton.tscn" id="1_a3h43"]
 [ext_resource type="PackedScene" uid="uid://bkeu71pfj7yul" path="res://scenes/PlayerTurnLabel.tscn" id="2_obwm8"]
+[ext_resource type="Script" path="res://scripts/Checker.gd" id="3_xt2lm"]
 
 [node name="Game" type="Node2D"]
 
@@ -72,3 +73,6 @@ offset_left = 256.0
 offset_top = 56.0
 offset_right = 468.0
 offset_bottom = 106.0
+
+[node name="Checker" type="Node2D" parent="."]
+script = ExtResource("3_xt2lm")

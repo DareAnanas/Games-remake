@@ -18,6 +18,10 @@ config/features=PackedStringArray("4.2", "Mobile")
 
 GlobalState="*res://GlobalState.gd"
 
+[display]
+
+window/size/viewport_width=746
+
 [editor]
 
 naming/default_signal_callback_name="on{node_name}{signal_name}"

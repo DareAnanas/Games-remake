@@ -12,6 +12,14 @@ var turn = 0;
 
 var sockets = [];
 
+var checker;
+
+func registerChecker(_checker):
+	checker = _checker;
+	
+func sendStateToChecker(id, state):
+	checker.setState(id, state);
+	
 func subscribe(function: Callable):
 	sockets.append(function);
 	
