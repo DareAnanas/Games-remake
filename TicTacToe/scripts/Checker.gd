@@ -70,8 +70,6 @@ func checkWinConditions():
 	
 	return false;
 	
-func won():
-	GlobalState.changeState(GlobalState.turnStates.NO_ACTION);
 
 func generateStateMatrix(rowSize, columnSize):
 	var _stateMatrix = [];
@@ -91,7 +89,7 @@ func setState(id, state):
 	var twoDimIndex = oneDimToTwoDim(id, ROW_SIZE);
 	stateMatrix[twoDimIndex[0]][twoDimIndex[1]] = state;
 	if checkWinConditions():
-		won();
+		GlobalState.won();
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

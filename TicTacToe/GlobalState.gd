@@ -20,12 +20,17 @@ func registerChecker(_checker):
 func sendStateToChecker(id, state):
 	checker.setState(id, state);
 	
-func subscribe(function: Callable):
-	sockets.append(function);
+func subscribe(label):
+	sockets.append(label);
 	
 func sendStateTextToSubscribers():
-	for function in sockets:
-		function.call(getStateText());
+	for label in sockets:
+		label.changeText(getStateText());
+
+func won():
+	for label in sockets:
+		label.won(getStateText());
+	changeState(GlobalState.turnStates.NO_ACTION);
 
 func changeState(state):
 	if !turnStates.values().has(state):
