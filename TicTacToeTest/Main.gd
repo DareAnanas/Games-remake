@@ -14,13 +14,17 @@ func vectorLoop(point : Vector2, vector : Vector2):
 	while not loopXEnded or not loopYEnded:
 		var modifiedX = x + point.x;
 		var modifiedY = y + point.y;
-		points.append([modifiedX, modifiedY]);
-		if x < vector.x:
+		points.append(Vector2(modifiedX, modifiedY));
+		if vector.x > 0 and x < vector.x:
 			x += 1;
+		elif vector.x < 0 and x > vector.x:
+			x -= 1;
 		else:
 			loopXEnded = true;
-		if y < vector.y:
+		if vector.y > 0 and y < vector.y:
 			y += 1;
+		elif vector.y < 0 and y > vector.y:
+			y -= 1;
 		else:
 			loopYEnded = true;
 	
@@ -28,9 +32,8 @@ func vectorLoop(point : Vector2, vector : Vector2):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var point = Vector2(0, 0);
-	var vector = Vector2(2, 2);
-	print(vectorLoop(point, vector));
+	for i in 2:
+		print(i);
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

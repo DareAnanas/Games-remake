@@ -1,7 +1,8 @@
 extends Label
 
 func changeText(_text):
-	text = "Player " + _text + " turn";
+	if (_text != null):
+		text = "Player " + _text + " turn";
 
 func _ready():
 	GlobalState.subscribe(changeText);
